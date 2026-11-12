@@ -1,0 +1,32 @@
+SESSION01
+[BTTH] Cẩm nang sử dụng AI hiệu quả cho tân sinh viên
+
+Tên lớp: HCM K26 CNTT2
+Môn học: Kỹ năng PROMPTING với AI
+Họ và tên: LƯƠNG THANH THƯ
+
+(1) Sơ đồ xâu chuỗi prompt
+Prompt 0 (giao vai trò) -> Prompt 1 (Phần 1) -> Prompt 2 (Phần 2) -> Prompt 3 (Phần 3) -> Prompt 4 (ghép cẩm nang).
+
+Kết quả bước trước là đầu vào bước sau, có kiểm tra giữa các bước.
+(2) Các prompt thành phần
+Prompt 0: “Bạn là giảng viên CNTT cho người mới. Tôi nhờ bạn viết cẩm nang ‘Học lập trình cùng AI’ gồm 3 phần, từng phần một. Hãy xác nhận đã hiểu.”
+Prompt 1: “Viết Phần 1 ‘AI đoán từ như thế nào?’: AI đoán token tiếp theo theo xác suất. Có 1 ví dụ đời thường, 1 ví dụ code. Tối đa 120 từ, dùng gạch đầu dòng.”
+Prompt 2: “Tóm tắt Phần 1: [dán]. Viết Phần 2 ‘3 cách nhận diện ảo giác’: mỗi cách có dấu hiệu, ví dụ, cách kiểm tra.”
+Prompt 3: “Tóm tắt Phần 1–2: [dán]. Viết Phần 3 ‘Khung CREATE’: đủ 6 chữ cái kèm ví dụ, cuối cùng đưa 1 prompt mẫu nhờ AI giải thích lỗi Python.”
+Prompt 4: “Ghép 3 phần thành cẩm nang hoàn chỉnh, thêm lời mở đầu và 3 lưu ý an toàn. Giọng gần gũi với sinh viên, tối đa 1 trang.”
+
+(3) Cẩm nang kết quả
+Phần 1: AI đoán từ như thế nào?
+AI không “hiểu” như bạn, nó đoán từ (token) tiếp theo có khả năng cao nhất.
+Giống điện thoại gợi ý từ khi gõ tin nhắn. Trong code, sau for i in AI hay đoán range(.
+Vì vậy AI có thể nói rất tự tin mà vẫn sai.
+
+Phần 2: 3 cách nhận diện AI “nói bừa”
+Kiểm tra sự tồn tại: hàm, thư viện, link lạ thì tra tài liệu chính thức (ví dụ list.sort_desc() không có trong Python).
+Chạy thử code: chạy với dữ liệu nhỏ có kết quả biết trước.
+Hỏi lại và đối chiếu: đáp án đổi hoặc không có nguồn thì kiểm tra thêm bằng nguồn khác.
+
+Phần 3: Khung CREATE
+Character (vai trò), Request (yêu cầu), Example (ví dụ mẫu), Adjustment (ràng buộc), Type of output (dạng đầu ra), Extras (bổ sung).
+Mẫu: “Bạn là gia sư Python cho người mới. Giải thích lỗi trong print("Xin chào). Giải thích kiểu: ‘Lỗi ở dòng 1 vì thiếu ngoặc kép đóng’. Dễ hiểu, tối đa 100 từ, dùng gạch đầu dòng. Cuối cùng cho 1 bài tập nhỏ.”
